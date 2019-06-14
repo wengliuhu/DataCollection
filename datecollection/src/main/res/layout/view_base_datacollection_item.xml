@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingHorizontal="18dip"
+    android:paddingVertical="8dip"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/item_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="4dip"
+            android:textSize="12sp"
+            android:tag="key"
+            android:textColor="#788096"
+            tools:text="请求标题" />
+
+        <TextView
+            android:id="@+id/item_must"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:tag="must"
+            android:text="*"
+            android:textColor="#f00"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_edit"
+        >
+        <EditText
+            android:id="@+id/item_value"
+            android:tag="value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edit"
+            android:gravity="left"
+            android:padding="13dip"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/item_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="16dip"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="36dip"
+            android:textSize="14sp"
+            tools:text="(0/500)"
+            android:visibility="gone"
+            android:textColor="#555"/>
+    </FrameLayout>
+
+
+</LinearLayout>

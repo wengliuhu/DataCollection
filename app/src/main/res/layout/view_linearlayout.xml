@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+<data>
+    <variable
+        name="viewModel"
+        type="com.keda.datecollection.model.viewbean.EditBean"/>
+</data>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:paddingVertical="16dip"
+    android:paddingHorizontal="17dip"
+    android:clickable="true"
+    android:background="#eaeaea">
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#848DA5"
+        android:text="@{viewModel.key}"
+        tools:text="案件类别"/>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#414960"
+        android:textSize="14sp"
+        android:layout_marginLeft="11dip"
+        android:text="@{viewModel.value}"
+        tools:text="刑事案件"/>
+
+
+</LinearLayout>
+</layout>
